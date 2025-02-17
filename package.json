@@ -1,0 +1,23 @@
+{
+  "name": "act4_build_rest_api",
+  "version": "1.0.0",
+  "description": "This is to test my GitHub Repository!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClinTuyor/act4_build_rest_api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClinTuyor/act4_build_rest_api/issues"
+  },
+  "homepage": "https://github.com/ClinTuyor/act4_build_rest_api#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
