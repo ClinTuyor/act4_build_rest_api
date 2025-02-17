@@ -4,7 +4,8 @@
   "description": "This is to test my GitHub Repository!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpileOnly src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "@types/helmet": "^0.0.48",
     "@types/http-status-codes": "^1.2.0",
     "@types/uuid": "^10.0.0",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.3"
   }
 }
