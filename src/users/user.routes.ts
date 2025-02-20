@@ -19,16 +19,16 @@ userRouter.get("/users", async (req: Request, res: Response) => {
     }
 });
 
-userRouter.get("/users/:id", async (req: Request, res: Response) => {
+userRouter.get("/users/:id", async (req: Request, res: Response, next: Function) => {
     try {
         const user : UnitUser = await database.findOne(req.params.id);
 
         if (!user) {
-            return res.status(StatusCodes.NOT_FOUND).json({ msg: 'User not found!' });
+            return res.status(StatusCodes.NOT_FOUND).json({ error: 'User not found!' });
         }
 
         return res.status(StatusCodes.OK).json({ user });
     } catch (error) {
-        return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({ error });
+        return next (error);
     } 
 })

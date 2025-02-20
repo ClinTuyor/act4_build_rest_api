@@ -27,7 +27,7 @@ function saveUsers() {
 
 export const findAll = async (): Promise<UnitUser[]> => Object.values(users);
 
-export const findOne = async (id: string): Promise<UnitUser | null> => users[id] || null;
+export const findOne = async (id: string): Promise<UnitUser> => users[id] || null;
 
 export const create = async (userData: UnitUser): Promise<UnitUser> => {
     
