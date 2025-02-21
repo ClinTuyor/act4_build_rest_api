@@ -2,6 +2,7 @@ import express from "express";
 import * as dotenv from "dotenv";
 import cors from "cors";
 import helmet from "helmet";
+
 import { userRouter } from './users/user.routes';
 
 dotenv.config();
@@ -9,7 +10,6 @@ dotenv.config();
 if (!process.env.PORT) {
     console.error(`No PORT value specified...`);
     process.exit(1);
-
 }
 
 const PORT: number = parseInt(process.env.PORT as string, 10);
